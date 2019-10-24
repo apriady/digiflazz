@@ -1,9 +1,16 @@
 {
   "name": "digiflazz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Digiflazz client library for NodeJS",
   "main": "index.js",
-  "repository": "git@github.com:apriady/digiflazz.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apriady/digiflazz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apriady/digiflazz/issues"
+  },
+  "homepage": "https://github.com/apriady/digiflazz#readme",
   "author": "Achmad Apriady <achmad.apriady@gmail.com>",
   "license": "MIT",
   "dependencies": {
