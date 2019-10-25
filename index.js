@@ -100,9 +100,9 @@ class Digiflazz {
       json: true
     };
 
-    if(cmd === 'CEK') options.body.command = 'inq-pasca';
-    if(cmd === 'BAYAR') options.body.command = 'pay-pasca';
-    if(cmd === 'STATUS') options.body.command = 'status-pasca';
+    if(cmd === 'CEK') options.body.commands = 'inq-pasca';
+    if(cmd === 'BAYAR') options.body.commands = 'pay-pasca';
+    if(cmd === 'STATUS') options.body.commands = 'status-pasca';
 
     return rp(options)
       .then(function (resp) {
