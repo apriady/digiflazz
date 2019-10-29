@@ -46,7 +46,16 @@ let deposit = await digiflazz.transaksi('sku', 'tujuan', 'ref_id', 'BAYAR');
 let deposit = await digiflazz.transaksi('sku', 'tujuan', 'ref_id', 'STATUS');
 ```
 
-##### Webhook (Coming Soon)
+##### Webhook
+```js
+const Digiflazz = require('digiflazz');
+const digiflazz = new Digiflazz('username', 'apikey', 'webhookkey');
+
+app.post("/hook", Digiflazz.webhook(digiflazz), (req) => {
+  // Anda dapat memproses hasilnya disini
+  // result webhook dapat diakses di req.digiwebhooks
+});
+```
 
 
 #### Seller Area (Coming Soon)
