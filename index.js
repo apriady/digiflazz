@@ -136,7 +136,6 @@ class Digiflazz {
         delivery: req.headers['x-digiflazz-delivery'],
         data: req.body.data
       }
-      next()
     }
     res.json({msg:"received"})
   }
